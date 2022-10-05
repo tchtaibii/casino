@@ -800,6 +800,91 @@ header{
     color: #808999;
 }
 /* hero 3 main end */
+
+/* hero 4  start*/
+/* about us */
+#about{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 194px;
+    width: 100%;
+}
+.about-us{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.about-us p{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+    margin-top: 44px;
+    color: #686D7B;
+}
+/* about us end */
+.home-contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.hc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.hc a{
+    text-decoration: none;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height, or 111% */
+
+    text-align: center;
+
+    color: #686D7B;
+}
+.hc p{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    /* or 167% */
+    color: #686D7B;
+    margin-left: 15px;
+}
+.hc ul{
+    list-style: none
+}
+.hc li{
+    margin-bottom: 19px;
+    display: flex;
+    flex-direction: row;
+
+}
+#contact{
+    margin-left: 91px;
+}
+.hc h3{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    /* identical to box height, or 110% */
+    color: #FFFFFF;
+    margin-bottom: 34px;
+}
+
 /* font face  */
 
 /* font face */
