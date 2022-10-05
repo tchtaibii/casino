@@ -12,6 +12,7 @@
 }
 body {
     background-color: rgb(19,21,27);
+    overflow-x: hidden
 }
 
 /* header style start */
@@ -146,6 +147,7 @@ header{
     justify-content: flex-start;
     width: fit-content;
     margin-right: 192px;
+    position: sticky;
 }
 
 /* left menu css classe */
@@ -159,6 +161,7 @@ header{
     background: linear-gradient(177.09deg, #171920 -3.07%, #1B1D25 165.3%);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 20px;
+    
 }
 
 .left-menu-2{
@@ -609,6 +612,7 @@ header{
 }
 #tables-section{
     margin-top: 114px;
+    margin-bottom: 310px;
 }
 .all-bets{
     display: flex;
@@ -652,6 +656,147 @@ header{
     margin-left: 5px;
     color: #FFFFFF;
     opacity: 0.3;
+}
+/* table rank */
+.table-rank{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(198.64deg, #171920 -5.56%, #1B1D25 179.16%);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    width: 1235px;
+    height: 614px;
+}
+.table-head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: 55px;
+    border-radius: 23px;
+    padding: 0 51px;
+}
+.table-head p{
+    font-family: 'Panton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    /* or 157% */
+
+    text-align: center;
+
+    color: #686D7B;
+}
+.table-c{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: 55px;
+    background: #1E2029;
+    border-radius: 23px;
+    padding: 0 51px;
+    margin-bottom: 15px;
+}
+.table-game{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 12px;
+}
+.table-wager{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 28px;
+}
+.table-c p{
+    font-family: 'Panton';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    /* or 157% */
+    margin-left: -12px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.table-wager p{
+    margin-right: 7px;
+}
+.table-game p{
+    font-family: 'Panton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    /* or 157% */
+    text-align: center;
+    color: #5070EE;
+    text-shadow: 4px 4px 15px rgba(80, 112, 238, 0.25);
+    
+}
+#table-multi{
+    font-family: 'Panton';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #ED8B13;
+    position: relative;
+    right: 57px;
+}
+#table-payout{
+    font-family: 'Panton';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #FCE530;
+    text-shadow: 4px 4px 20px rgba(252, 229, 48, 0.25);
+    position: relative;
+    right: 11px;
+}
+.player-game-p{
+    position: relative;
+    right: 75px;
+}
+#tc2, #tc4, #tc6{
+    background: #232733;
+}
+#tc7{
+    margin-bottom: 29px;
+}
+/* end table rank */
+.showmore{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 26px;
+}
+.showmore p{
+    font-family: 'Panton';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    margin-right: 12px;
+    color: #808999;
 }
 /* hero 3 main end */
 /* font face  */
