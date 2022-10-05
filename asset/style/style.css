@@ -1,3 +1,4 @@
+@import url('http://fonts.cdnfonts.com/css/panton');
 * {
     margin: 0;
     padding: 0;
@@ -51,7 +52,7 @@ header{
         text-decoration: none;
         font-family: 'Panton';
         font-style: normal;
-        font-weight: 700;
+        font-weight: 500;
         font-size: 14px;
         line-height: 17px;
         margin-left: 10px;
@@ -81,13 +82,14 @@ header{
     border: 1px solid #627EEA;
     border-radius: 9px;
 }
-.login-nav h3{
+.login-nav a{
     font-family: 'Panton';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 /* register */
@@ -101,13 +103,14 @@ header{
     background-color: #F7931A;
     border-radius: 9px;
 }
-.register-nav h3{
+.register-nav a{
     font-family: 'Panton';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
+    text-decoration: none;
 }
 /* search */
 .search-nav{
@@ -128,7 +131,10 @@ header{
     /* align-items: center; */
     justify-content: flex-start;
     margin-top: 52px;
+    /* width: 100%; */
     /* width: 100vw; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* side 1 = left side start*/
@@ -137,7 +143,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: fit-content;
     margin-right: 192px;
 }
@@ -194,7 +200,7 @@ header{
 .lmc-h h3{
         font-family: 'Panton';
         font-style: normal;
-        font-weight: 700;
+        font-weight: 500;
         font-size: 14px;
         line-height: 22px;
         /* identical to box height, or 157% */
@@ -236,7 +242,7 @@ header{
     /* color: #FFFFFF; */
     font-family: 'Panton';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 14px;
     line-height: 22px;
     color: #FFFFFF;
@@ -256,7 +262,7 @@ header{
 .live-c-t h3{
     font-family: 'Panton';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 12px;
     line-height: 22px;
     text-align: center;
@@ -276,7 +282,7 @@ header{
 .live-c-n h3{
     font-family: 'Panton';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 12px;
     line-height: 22px;
     /* identical to box height, or 183% */
@@ -303,8 +309,10 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
     /* margin-top: 52px; */
 }
 /* slideshow 1 */
@@ -335,10 +343,10 @@ header{
 #imgs1{
     width: 374px;
 }
-.imgs img{
+/* .imgs img{
     width: inherit;
     height: inherit;
-}
+} */
 .img-chose{
     display: flex;
     flex-direction: row;
@@ -371,7 +379,7 @@ header{
     flex-direction: column;
     /* align-items: center; */
     justify-content: space-between;
-    width: 100%;
+    /* width: 100%; */
 }
 #hero1{
     margin-top: 73px;
@@ -407,7 +415,7 @@ header{
 .button-all-games h2{
     font-family: 'Panton';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     display: flex;
@@ -420,7 +428,7 @@ header{
     font-weight: 200;
 }
 /* hero 1 main  */
-.hero1-main{
+.hero-main{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -449,7 +457,7 @@ header{
     margin-left: 10px;
     font-family: 'Panton';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
     line-height: 22px;
     /* identical to box height, or 110% */
@@ -476,7 +484,7 @@ header{
 .herostyle p{
     font-family: 'Panton';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 16px;
     line-height: 22px;
     /* or 138% */
@@ -501,7 +509,7 @@ header{
     background: linear-gradient(113.97deg, #F7931A 1.69%, #D07200 108.48%);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
-.button-to-go h4{
+.button-to-go a{
     font-family: 'Panton';
     font-style: normal;
     font-weight: 800;
@@ -511,11 +519,141 @@ header{
     text-align: center;
     color: #FFFFFF;
     margin-right: 20px;
+    text-decoration: none;
 }
 .hero-title img{
     width: 21px;
 }
+/* hero 1 end */
 
+/* hero 2 main start */
+#hero2{
+    margin-top: 114px;
+}
+/* hero 2 main */
+#hero2-main{
+    flex-direction: column;
+}
+.fb-main{
+    margin-top: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#fb2-main{
+    margin-top: 0;
+}
+.fb-box{
+    width: 239px;
+    height: 234px;
+    border-radius: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#hilo{
+    background: url('../img/hilo.png');
+    margin-right: 10px;
+}
+#keno{
+    background: url('../img/keno.png');
+    margin-right: 10px;
+}
+#roulette-m{
+    background: url('../img/roullete-multy.png');
+    margin-right: 10px;
+}
+#hash-dice{
+    background: url('../img/hash-dice.png');
+    margin-right: 10px;
+}
+#keno-m{
+    background: url('../img/keno-muly.png');
+}
+
+#mine{
+    background: url('../img/mine.png');
+    margin-right: 10px;
+}
+#blackjackfb1{
+    background: url('../img/black-jack.png');
+    margin-right: 10px;
+}
+#crash-fb1{
+    background: url('../img/hash-dice.png');
+    margin-right: 10px;
+}
+#wheel{
+    background: url('../img/wheel.png');
+    margin-right: 10px;
+}
+#roulette-m2{
+    background: url('../img/roullete-multy.png');
+}
+/* hero 2 main end */
+
+/* hero 3 main  table rank */
+
+.ablb{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 340px;
+    height: 49px;
+    background: linear-gradient(177.09deg, #171920 -3.07%, #1B1D25 165.3%);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    margin-bottom: 34px;
+}
+#tables-section{
+    margin-top: 114px;
+}
+.all-bets{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 36px;
+    background: #5070EE;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 4px 4px 20px rgba(80, 112, 238, 0.15);
+    border-radius: 20px;
+}
+.all-bets h4{
+    font-family: 'Panton';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 5px;
+
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.leaderboard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 36px;
+}
+.leaderboard h4{
+    font-family: 'Panton';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    margin-left: 5px;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+/* hero 3 main end */
 /* font face  */
 
 /* font face */
