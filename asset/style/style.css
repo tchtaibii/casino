@@ -779,14 +779,15 @@ header{
     margin-bottom: 29px;
 }
 /* end table rank */
-.showmore{
+#showmore{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-bottom: 26px;
+    cursor: pointer;
 }
-.showmore p{
+#showmore p{
     font-family: 'Panton';
     font-style: normal;
     font-weight: 300;
