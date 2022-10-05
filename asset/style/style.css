@@ -852,7 +852,44 @@ header{
     color: #FFFFFF;
     margin-bottom: 34px;
 }
-
+/* hero 5 = footer (start) */
+.socialmedia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+.socialmedia a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: #191B22;
+    border-radius: 50%;
+    margin-right: 22px;
+}
+#footer{
+    width: 100%;
+}
+#ytb{
+    margin-right: 0;
+}
+.brands-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 119px;
+}
+.logo-b{
+    margin-right: 40px;
+}
+#ripl{
+    margin-right: 0;
+}
+/* hero 5 (end) */
 /* font face  */
 
 /* font face */
