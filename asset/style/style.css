@@ -238,7 +238,7 @@ header{
     align-items: flex-start;
     font-family: 'Panton';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
     line-height: 22px;
     color: #FFFFFF;
@@ -322,6 +322,8 @@ header{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    width: fit-content;
+    height: fit-content;
 }
 #slide-1{
     margin-right: 19px;
@@ -332,6 +334,10 @@ header{
     background: linear-gradient(177.09deg, #171920 -3.07%, #1B1D25 165.3%);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 20px;
+}
+.imgs img{
+    width: inherit;
+    height: inherit;
 }
 #imgs1{
     width: 374px;
@@ -358,7 +364,7 @@ header{
 }
 /* slideshow 2 */
 #imgs2{
-    width: 790px;
+    width: 548px;
 }
 
 
@@ -450,7 +456,7 @@ header{
 }
 .featured-img{
     display: flex;
-    width: 570px;
+    width: 433px;
     height: 256px;
     background: linear-gradient(177.09deg, #171920 -3.07%, #1B1D25 165.3%);
     background-repeat: no-repeat;
@@ -472,7 +478,7 @@ header{
     font-size: 16px;
     line-height: 22px;
     color: #808999;
-    width: 570px;
+    width: 433px;
     margin: 31px 0;
 }
 .button-to-go{
@@ -528,50 +534,61 @@ header{
     margin-top: 0;
 }
 .fb-box{
-    width: 239px;
-    height: 234px;
+    width: 169px;
+    height: 169px;
     border-radius: 20px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover
 }
 #hilo{
     background: url('../img/hilo.png');
     margin-right: 10px;
+    background-size: cover
 }
 #keno{
     background: url('../img/keno.png');
     margin-right: 10px;
+    background-size: cover
 }
 #roulette-m{
     background: url('../img/roullete-multy.png');
     margin-right: 10px;
+    background-size: cover
 }
 #hash-dice{
     background: url('../img/hash-dice.png');
     margin-right: 10px;
+    background-size: cover
 }
 #keno-m{
     background: url('../img/keno-muly.png');
+    background-size: cover
 }
 
 #mine{
     background: url('../img/mine.png');
     margin-right: 10px;
+    background-size: cover
 }
 #blackjackfb1{
     background: url('../img/black-jack.png');
     margin-right: 10px;
+    background-size: cover
 }
 #crash-fb1{
     background: url('../img/hash-dice.png');
     margin-right: 10px;
+    background-size: cover
 }
 #wheel{
     background: url('../img/wheel.png');
     margin-right: 10px;
+    background-size: cover
 }
 #roulette-m2{
     background: url('../img/roullete-multy.png');
+    background-size: cover;
 }
 /* hero 2 main end */
 
@@ -645,7 +662,7 @@ header{
     background: linear-gradient(198.64deg, #171920 -5.56%, #1B1D25 179.16%);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 12px;
-    width: 1235px;
+    width: 892px;
     height: 614px;
 }
 .table-head{
@@ -779,19 +796,19 @@ header{
 /* about us */
 #about{
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: flex-start;
     margin: 0 auto;
     margin-bottom: 194px;
-    margin-left: 177px;
-    width: 75%;
-    
+    /* margin-left: 177px; */
+    width: 85%;
 }
 .about-us{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    width: 379px;
 }
 .about-us p{
     font-family: 'Barlow';
@@ -801,6 +818,7 @@ header{
     line-height: 30px;
     margin-top: 44px;
     color: #686D7B;
+    width: 379px;
 }
 /* about us end */
 .home-contact{
@@ -814,7 +832,6 @@ header{
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    margin-left: 615px;
 }
 .hc a{
     text-decoration: none;
@@ -823,7 +840,6 @@ header{
     font-weight: 400;
     font-size: 18px;
     line-height: 20px;
-    text-align: center;
     color: #686D7B;
 }
 .hc p{
@@ -894,3 +910,341 @@ header{
     margin-right: 0;
 }
 /* hero 5 (end) */
+
+@media (min-width: 1920px) {
+    #imgs2{
+        width: 790px;
+    }
+    .featured-img{
+        width: 570px;
+    }
+    .herostyle p{
+        width: 570px;
+    }
+    .fb-box{
+        width: 239px;
+        height: 234px;
+    }
+    .table-rank{
+        width: 1235px;
+    }
+}
+@media (max-width:1567px) {
+    .s1{
+        margin-right: 27px;
+    }
+}
+@media (max-width:1346px) {
+    #imgs2 {
+        width: 367px;
+    }
+    .featured-img {
+        width: 367px;
+    }
+    .herostyle p{
+        width: 367px;
+    }
+    .s1 {
+        margin-right: 71px;
+    }
+    .fb-box {
+        width: 145px;
+        height: 145px;
+    }
+    .table-rank {
+        width: 764px;
+    }
+    .player-game-p {
+        right: 35px;
+    }
+    #pgame-h{
+        position: relative;
+        left: 41px;
+    }
+
+    .logo-b {
+        width: 10%;
+    }
+}
+@media (max-width:1256px) {
+    .s1 {
+        margin-right: 0;
+    }
+}
+@media (max-width:1163px) {
+    #imgs1 {height: 258px;}
+    #imgs2 {height: 258px;}
+    #imgs1, #imgs2, .featured-img,.herostyle p{width: 300px;}
+    .fb-box {
+        width: 117px;
+        height: 117px;
+    }
+    .table-rank {
+        width: 635px;
+    }
+}
+@media (max-width:1108px) {
+    .nav-bar li {margin-right: 12px;}
+    .nav-bar li a {margin-left: 2px;}
+}
+@media (max-width:1022px) {
+    .nav-bar ul li img{
+        display: none;
+    }
+    #imgs1, #imgs2, .featured-img, .herostyle p {
+        width: 240px;
+    }
+    #imgs1, #imgs2 {
+        height: 202px;
+    }
+    .title-text h3 {
+        font-size: 30px;
+    }
+    .fb-box {
+        width: 96px;
+        height: 96px;
+    }
+    .table-rank {
+        width: 524px;
+    }
+    .table-game p {
+        font-size: 10px;
+    }
+    .table-c p{
+        font-size: 10px;
+    }
+    #game-h{
+        position: relative;
+        right: 26px;
+    }
+    .table-game {
+        right: 37px;
+    }
+    #pgame-h {
+        left: 30px;
+    }
+    #payout-h{
+        position: relative;
+        right: -27px;
+    }
+    #multi-h{
+        position: relative;
+        right: -27px;
+    }
+    #table-multi {
+        right: 17px;
+    }
+    #table-payout{
+        right: -17px;
+    }
+    .table-wager{
+        right: 0;
+    }
+    #wager-h{
+        position: relative;
+        left: 20px;
+    }
+}
+@media (max-width: 909px) {
+    .hc a {
+        font-size: 13px;
+    }
+    .hc li {
+        margin-bottom: 3px;
+    }
+    .about-us p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .hc p {
+        font-size: 13px;
+    }
+    #slideshow {
+        flex-direction: column;
+    }
+    #slide-1 {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    #imgs1, #imgs2, .featured-img, .herostyle p {
+        width: 372px;
+    }
+    .hero-main {
+        flex-direction: column;
+    }
+    .button-all-games h2 {
+        line-height: 19px;
+        font-size: 12px;
+    }
+    .title-text h3 {
+        font-size: 20px;
+    }
+    .fb-box {
+        width: 62px;
+        height: 62px;
+    }
+    .fb-main {
+        margin-top: 20px;
+        margin-bottom: 6px;
+    }
+    #hero2 {
+        margin-top: 27px;
+    }
+    .table-rank {
+        width: 341px;
+    }
+    .table-game img{
+        display: none;
+    }
+    .table-wager img{
+        display: none;
+    }
+    .table-head p {
+        font-size: 8px;
+    }
+    .table-c p {
+        font-size: 8px;
+    }
+    #table-multi {
+        font-size: 8px;
+    }
+    #table-payout {
+        font-size: 8px;
+    }
+    .table-c {
+        padding: 0 71px;
+    }
+    #pgame-h {
+        left: -5px;
+    }
+    #wager-h {
+        left: 2px;
+    }
+    .table-wager p{
+        position: relative;
+        right: 3px;
+    }
+    #table-multi {
+        left: 2px;
+    }
+    #multi-h {
+        left: 14px;
+    }
+    #payout-h {
+        position: relative;
+        right: -18px;
+    }
+    #table-payout {
+        right: -33px;
+    }
+    .herostyle p {
+        font-size: 12px;
+    }
+    #hero1-1{
+        margin-right: 0;
+    }
+    #showmore p {
+        font-size: 10px;
+    }
+    #tables-section {
+        margin-top: 64px;
+        margin-bottom: 141px;
+    }
+    .nav-bar li a {
+        font-size: 8px;
+    }
+    .login-nav, .register-nav {
+        width: 70px;
+        height: 30px;
+    }
+    .login-nav a, .log-reg a{
+        font-size: 10px;
+    }
+    .ablb {
+        width: 180px;
+    }
+    .leaderboard h4 {
+        font-size: 9px;
+    }
+    .all-bets h4 {
+        font-size: 9px;
+    }
+}
+@media (max-width: 761px) {
+    #imgs1, #imgs2, .featured-img, .herostyle p {
+        width: 305px;
+    }
+    .fb-box {
+        width: 45px;
+        height: 45px;
+    }
+    .button-all-games h2 {
+        font-size: 8px;
+    }
+    .left-menu-1, .left-menu-2 {
+        width: 222px;
+        margin-left: 27px;
+    }
+    .lmc-h {
+        width: 175px;
+    }
+    .live-c-t {
+        width: 52px;
+    }
+    .live-c-t h3, .live-c-n h3{
+        font-size: 8px;
+    }
+    .live-c-n {
+        width: 31px;
+    }
+    .lmc-h h3, .main-c li a {
+        font-size: 10px;
+    }
+    .leaderboard h4 {
+        font-size: 7px;
+    }
+    #contact {
+        margin-left: 19px;
+    }
+    #about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 194px;
+        /* margin-left: 177px; */
+        width: 85%;
+    }
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+    }
+    .home-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        margin: auto;
+    }
+    .home-contact {
+        margin-top: 36px;
+    }
+    .hc {
+        align-items: center;
+    }
+    .hc li{
+        justify-content: center;
+    }
+    .home-contact {
+        margin-top: 67px;
+    }
+}
+@media (max-width:656px) {
+    
+}
