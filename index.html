@@ -37,52 +37,59 @@
             <!-- login -->
             <div class="login-nav" ><a href="#" onclick="registre_login('login-panel')">LOGIN</a></div>
             <!-- register -->
-            <div class="register-nav"><a href="">REGISTRE</a></div>
+            <div class="register-nav"><a href="#" onclick="registre_login('registre-panel')">REGISTRE</a></div>
             <!-- search -->
             <div class="search-nav"><img src="asset/img/search.svg" alt=""></div>
         </div>
     </header>
     <!-- container -->
     <div class="b-container">
-        <!-- login panel -->
+        <!-- login and register panel -->
         <div class="panel" id="panel">
+            <!-- login panel -->
             <div id="login-panel">
+                <img id="x" src="asset/img/x.webp" alt="">
                 <img class="logo-l" src="asset/img/logo.svg" alt="">
                 <h3>Welcome back!</h3>
                 <p class="login-p" >Login to your account</p>
-                <form class="form" action="">
-                    <input id="email-l" class="areatext" type="email" placeholder="Email Address">
+                <form id='form-lo' class="form" action="">
+                    <input id="email-l" class="areatext email-l" type="email" placeholder="Email Address">
                     <div class="password">
-                        <input id="password-l" class="areatext" type="password" placeholder="Password">
+                        <input id="password-l" class="password-l areatext" type="password" placeholder="Password">
                         <img src="asset/img/hide.svg" alt="">
                     </div>
-                    
                     <a class="a-form" href="">Recover Password</a>
                     <div class="signup-l">
                         <p>Don’t have an account?&nbsp;</p>
-                        <a href="">Sign Up</a>
+                        <a id="registre_o" href="">Sign Up</a>
                     </div>
-                    <input id="submit-l" type="submit" value="LOGIN TO YOUR ACCOUNT">
+                    <div class="input-b" >
+                        <img src="asset/img/profile_s.svg" alt="">
+                        <input id="login-but" class="submit-l login-but" type="submit" value="LOGIN TO YOUR ACCOUNT">
+                    </div>
                 </form>
             </div>
             <!-- registre panel -->
-            <div id="login-panel">
+            <div id="registre-panel">
                 <img class="logo-l" src="asset/img/logo.svg" alt="">
-                <h3>Welcome back!</h3>
-                <p class="login-p" >Login to your account</p>
-                <form class="form" action="">
-                    <input id="email-l" class="areatext" type="email" placeholder="Email Address">
+                <h3>Register your account</h3>
+                <p class="registre-p" >Create your free account</p>
+                <form id='form-re' class="form" action="">
+                    <input id="name-re" class="areatext" type="email" placeholder="Your Full Name">
+                    <input id="email-re" class="areatext email-l" type="email" placeholder="Your Email Address">
                     <div class="password">
-                        <input id="password-l" class="areatext" type="password" placeholder="Password">
+                        <input id="password-re" class="areatext password-l" type="password" placeholder="Password">
                         <img src="asset/img/hide.svg" alt="">
                     </div>
-                    
-                    <a class="a-form" href="">Recover Password</a>
                     <div class="signup-l">
-                        <p>Don’t have an account?&nbsp;</p>
-                        <a href="">Sign Up</a>
+                        <p>Already have an account?&nbsp;</p>
+                        <a id="login_b" href="">Login</a>
                     </div>
-                    <input id="submit-l" type="submit" value="LOGIN TO YOUR ACCOUNT">
+                    <div class="input-b" >
+                        <img src="asset/img/profile_s.svg" alt="">
+                        <input id="registre-but" class="submit-l" type="submit" value="CREATE YOUR ACCOUNT">
+                    </div>
+                    
                 </form>
             </div>
         </div>

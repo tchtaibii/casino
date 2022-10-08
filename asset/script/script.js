@@ -6,7 +6,13 @@ function registre_login(id) {
     if (id == 'login-panel')
     {
         console.log('register');
-        var x = document.getElementById('login-panel');
+        var x = document.getElementById(id);
+        x.style.display = "flex";
+    }
+    else if (id == 'registre-panel')
+    {
+        console.log('register');
+        var x = document.getElementById(id);
         x.style.display = "flex";
     }
 }

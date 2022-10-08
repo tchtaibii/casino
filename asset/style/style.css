@@ -931,9 +931,15 @@ header{
     z-index: 2;
     backdrop-filter: blur(9px);
 }
-
 #login-panel{
     display: none;
+}
+#registre-panel{
+    display: none;
+}
+
+#login-panel, #registre-panel{
+    /* display: none; */
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -948,7 +954,7 @@ header{
     border-radius: 15px;
     margin: auto;
 }
-#login-panel h3{
+#login-panel h3,#registre-panel h3{
     font-family: 'Barlow';
     font-style: normal;
     font-weight: 500;
@@ -961,7 +967,13 @@ header{
     color: #FFFFFF;
     margin-bottom: 8px;
 }
-.login-p{
+#login_b{
+    color: #627EEA;
+}
+#registre_o{
+    color: #F7931A;
+}
+.login-p, .registre-p{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -974,7 +986,7 @@ header{
     margin-bottom: 66px ;
 }
 .logo-l{
-    margin-top: 53px;
+    margin-top: 2px;
     margin-bottom: 48px;
 }
 .form{
@@ -1007,17 +1019,49 @@ header{
     padding-bottom: 3px;
     outline: none;
 }
-#submit-l{
+.input-b{
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    width: 232px;
-    height: 60px;
+    justify-content: center;
+    position: relative;
+    left: -6px;
+}
+#x{
+    width: 40px;
+    height: 40px;
+    color: #171920;
+    position: relative;
+    left: 194px;
+    cursor: pointer;
+    overlay
+}
+.input-b img {
+    position: relative;
+    left: 42px;
+}
+#login-but{
     background: linear-gradient(93.14deg, #F7931A -0.9%, #627EEA -0.89%, #627EEA 106.96%);
     border: 1px solid #9CB1FF;
     box-shadow: 0px 4px 20px rgba(98, 126, 234, 0.15);
+    padding-right: 7px;
+}
+#registre-but{
+    background: linear-gradient(93.14deg, #F7931A -0.9%, #FFA942 106.96%);
+    border: 1px solid #FFC278;
+    box-shadow: 0px 4px 20px rgba(252, 162, 53, 0.15);
     border-radius: 10px;
+}
+.submit-l{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 15px;
+    align-items: center;
+    width: 232px;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 .a-form {
     margin-bottom: 48px;
@@ -1063,7 +1107,6 @@ header{
     /* identical to box height */
     text-align: center;
     /* Black/30 */
-    color: #F7931A;
 }
 .password{
     display: flex;
@@ -1080,9 +1123,9 @@ header{
     top: -13px;
 }
 
-#email-l{background: url('../img/mail-l.svg') no-repeat scroll 20px 18px; }
-#password-l{background: url('../img/password.svg') no-repeat scroll 20px 18px;}
-
+.email-l{background: url('../img/mail-l.svg') no-repeat scroll 20px 18px; }
+.password-l{background: url('../img/password.svg') no-repeat scroll 20px 18px;}
+#name-re{background: url('../img/full_name.svg') no-repeat scroll 20px 18px;}
 @media (min-width: 1920px) {
     #imgs2{
         width: 790px;
