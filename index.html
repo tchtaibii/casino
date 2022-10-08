@@ -15,6 +15,7 @@
     <link href="http://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/panton" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Document</title>
 </head>
@@ -34,6 +35,9 @@
         </div>
         <!-- login/register/search -->
         <div class="log-reg">
+            <a href="javascript:void(0);" id="icon" onclick="showbar()">
+                <i class="fa fa-bars"></i>
+            </a>
             <!-- login -->
             <div class="login-nav" ><a href="#" onclick="registre_login('login-panel')">LOGIN</a></div>
             <!-- register -->
@@ -43,6 +47,14 @@
         </div>
     </header>
     <!-- container -->
+    <div id="navmobile">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">Affiliates</a></li>
+            <li><a href="#">Free Drops</a></li>
+            <li><a href="#">FAQs</a></li>
+        </ul>
+    </div>
     <div class="b-container">
         <!-- login and register panel -->
         <div class="panel" id="panel">

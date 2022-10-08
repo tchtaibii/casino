@@ -47,3 +47,10 @@ function unvisible_menu(id) {
     else
         x.style.display = "none";
 }
+function showbar(){
+    var m = document.getElementById("navmobile");
+    if (m.style.display == "flex")
+        m.style.display = "none";
+    else
+        m.style.display = "flex";
+}
