@@ -11,7 +11,6 @@ function registre_login(id) {
         x1.style.display = "none";
         var f = document.getElementById(id);
         f.style.display = "hide";
-
     }
     var y = document.getElementById('panel');
     var z = document.getElementsByTagName('body');
@@ -21,7 +20,7 @@ function registre_login(id) {
     {
         var x = document.getElementById(id);
         x.style.display = "flex";
-        var f = document.getElementById('x');
+        var f = document.getElementById('xr');
         f.style.display = "block";
         // disable registre
         var s = document.getElementById('registre-panel');
