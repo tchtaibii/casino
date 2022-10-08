@@ -13,7 +13,7 @@
 body {
     background-color: rgb(19,21,27);
     overflow-x: hidden;
-    overflow: hidden;
+    overflow: auto;
 }
 
 /* header style start */
@@ -916,7 +916,12 @@ header{
 
 /* login panel */
 
-.panel{
+#panel{
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -924,26 +929,159 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    backdrop-filter: blur(6px);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+    backdrop-filter: blur(9px);
 }
 
 #login-panel{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     position: absolute;
     top: 137px;
     /* left: 50%; */
     /* transform: translate(-50%, -50%); */
     z-index: 3;
     width: 443px;
-    height: 579px;
+    height: 640px;
     background: #181A22;
     border-radius: 15px;
     margin: auto;
 }
+#login-panel h3{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    /* identical to box height */
+
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+.login-p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    text-align: center;
+    /* Black/30 */
+    color: #8B8D97;
+    margin-bottom: 66px ;
+}
+.logo-l{
+    margin-top: 53px;
+    margin-bottom: 48px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+.areatext{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 375px;
+    height: 52px;
+    background-color: #1C1E27;
+    border-radius: 8px;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(171, 175, 177, 0.5);
+    padding-left: 56px;
+    padding-top: 9px;
+    padding-right: 10px;
+    margin-bottom: 30px;
+    border: 2px #1C1E27 solid;
+    padding-bottom: 3px;
+    outline: none;
+}
+#submit-l{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 232px;
+    height: 60px;
+    background: linear-gradient(93.14deg, #F7931A -0.9%, #627EEA -0.89%, #627EEA 106.96%);
+    border: 1px solid #9CB1FF;
+    box-shadow: 0px 4px 20px rgba(98, 126, 234, 0.15);
+    border-radius: 10px;
+}
+.a-form {
+    margin-bottom: 48px;
+    text-decoration: none;
+    position: relative;
+    float: left;
+    width: inherit;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5570F1;
+    left: 129px;
+    top: -23px;
+}
+.signup-l{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 27px;
+}
+.signup-l p{
+    text-decoration: none;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    text-align: center;
+    /* Black/30 */
+    color: #8B8D97;
+}
+.signup-l a{
+    text-decoration: none;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    text-align: center;
+    /* Black/30 */
+    color: #F7931A;
+}
+.password{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+    position: relative;
+    left: 8px;
+}
+.password img{
+    position: relative;
+    left: -29px;
+    top: -13px;
+}
+
+#email-l{background: url('../img/mail-l.svg') no-repeat scroll 20px 18px; }
+#password-l{background: url('../img/password.svg') no-repeat scroll 20px 18px;}
 
 @media (min-width: 1920px) {
     #imgs2{
@@ -1190,6 +1328,7 @@ header{
     .login-nav, .register-nav {
         width: 70px;
         height: 30px;
+        cursor: pointer;
     }
     .login-nav a, .log-reg a{
         font-size: 10px;

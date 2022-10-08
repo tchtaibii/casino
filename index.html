@@ -35,7 +35,7 @@
         <!-- login/register/search -->
         <div class="log-reg">
             <!-- login -->
-            <div class="login-nav"><a href="">LOGIN</a></div>
+            <div class="login-nav" ><a href="#" onclick="registre_login('login-panel')">LOGIN</a></div>
             <!-- register -->
             <div class="register-nav"><a href="">REGISTRE</a></div>
             <!-- search -->
@@ -45,9 +45,49 @@
     <!-- container -->
     <div class="b-container">
         <!-- login panel -->
-        <div class="panel">
-            <div id="login-panel"></div>
+        <div class="panel" id="panel">
+            <div id="login-panel">
+                <img class="logo-l" src="asset/img/logo.svg" alt="">
+                <h3>Welcome back!</h3>
+                <p class="login-p" >Login to your account</p>
+                <form class="form" action="">
+                    <input id="email-l" class="areatext" type="email" placeholder="Email Address">
+                    <div class="password">
+                        <input id="password-l" class="areatext" type="password" placeholder="Password">
+                        <img src="asset/img/hide.svg" alt="">
+                    </div>
+                    
+                    <a class="a-form" href="">Recover Password</a>
+                    <div class="signup-l">
+                        <p>Don’t have an account?&nbsp;</p>
+                        <a href="">Sign Up</a>
+                    </div>
+                    <input id="submit-l" type="submit" value="LOGIN TO YOUR ACCOUNT">
+                </form>
+            </div>
+            <!-- registre panel -->
+            <div id="login-panel">
+                <img class="logo-l" src="asset/img/logo.svg" alt="">
+                <h3>Welcome back!</h3>
+                <p class="login-p" >Login to your account</p>
+                <form class="form" action="">
+                    <input id="email-l" class="areatext" type="email" placeholder="Email Address">
+                    <div class="password">
+                        <input id="password-l" class="areatext" type="password" placeholder="Password">
+                        <img src="asset/img/hide.svg" alt="">
+                    </div>
+                    
+                    <a class="a-form" href="">Recover Password</a>
+                    <div class="signup-l">
+                        <p>Don’t have an account?&nbsp;</p>
+                        <a href="">Sign Up</a>
+                    </div>
+                    <input id="submit-l" type="submit" value="LOGIN TO YOUR ACCOUNT">
+                </form>
+            </div>
         </div>
+        
+        
         <!-- left menu -->
         <div class="s1">
             <!-- left-menu-part1 -->
@@ -391,5 +431,6 @@
             </div>
         </section>
     </footer>
+    <script src="asset/script/script.js"></script>
 </body>
 </html>
