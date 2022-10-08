@@ -986,8 +986,8 @@ header{
     margin-bottom: 66px ;
 }
 .logo-l{
-    margin-top: 2px;
     margin-bottom: 48px;
+    margin-top: 51px;
 }
 .form{
     display: flex;
@@ -1034,7 +1034,9 @@ header{
     position: relative;
     left: 194px;
     cursor: pointer;
-    overlay
+    display: none;
+    z-index: 100;
+    bottom: 229px;
 }
 .input-b img {
     position: relative;
