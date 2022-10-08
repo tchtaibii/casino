@@ -248,6 +248,9 @@ header{
     margin-top: 3px;
     margin: 0 15px;
 }
+#live-casino-main{
+    display: flex;
+}
 .live-c-t{
     display: flex;
     justify-content: center;
@@ -985,6 +988,9 @@ header{
     color: #8B8D97;
     margin-bottom: 66px ;
 }
+.cd{
+    cursor: pointer;
+}
 .logo-l{
     margin-bottom: 48px;
     margin-top: 51px;
@@ -1036,7 +1042,7 @@ header{
     cursor: pointer;
     display: none;
     z-index: 100;
-    bottom: 229px;
+    bottom: 424px;
 }
 .input-b img {
     position: relative;

@@ -19,18 +19,32 @@ function registre_login(id) {
     y.style.display = "flex";
     if (id == 'login-panel')
     {
-        console.log('register');
         var x = document.getElementById(id);
         x.style.display = "flex";
         var f = document.getElementById('x');
         f.style.display = "block";
+        // disable registre
+        var s = document.getElementById('registre-panel');
+        s.style.display = "none";
     }
     else if (id == 'registre-panel')
     {
-        console.log('register');
+        // enable registre
         var x = document.getElementById(id);
         x.style.display = "flex";
         var f = document.getElementById('x');
         f.style.display = "block";
+        // disable login
+        var s = document.getElementById('login-panel');
+        s.style.display = "none";
     }
+}
+
+function unvisible_menu(id) {
+    var x = document.getElementById(id);
+    if (x.style.display == "none") {
+        x.style.display = "flex";
+    }
+    else
+        x.style.display = "none";
 }
