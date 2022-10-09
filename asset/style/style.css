@@ -1469,6 +1469,16 @@ header{
         margin-top: 67px;
     }
 }
+.menuu{
+    position: relative;
+    display: none;
+    width: 127px;
+    /* position: absolute; */
+    top: -34px;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+}
 /* nav bar mobile  */
 #icon{
     display: none;
@@ -1519,6 +1529,12 @@ header{
         margin-left: 0;
         width: 80%;
     }
+    .brands-logo{
+        display: none;
+    }
+    .socialmedia a{
+        background: 0;
+    }
     .left-menu-2{
         margin-bottom: 50px;
     }
@@ -1547,5 +1563,110 @@ header{
     }
     #icon{
         display: inline;
+        width: 30%;
+    }
+    .ex{
+        width: 30%;
+    }
+    .menuu{
+        display: block;
+
+    }
+    .left-menu-1, .left-menu-2 {
+        margin-top: -79px;
+    }
+    #left-s{
+        display: none;
+    }
+}
+@media (max-width: 389px) {
+    .ex{
+        display: none;
+    }
+    #icon {
+        width: fit-content;
+    }
+    #imgs1, #imgs2, .featured-img, .herostyle p {
+        width: 218px;
+        height: 157px;
+    }
+    .title-text h3 {
+        font-size: 14px;
+    }
+    .button-all-games h2 {
+        font-size: 6px;
+    }
+    .button-to-go a {
+        font-size: 14px;
+    }
+    .featured-img, .herostyle p {
+        width: 218px;
+        height: 93px;
+    }
+    .fb-box {
+        width: 33px;
+        height: 33px;
+    }
+    .table-rank {
+        width: 274px;
+    }
+    .title-text h3 {
+        line-height: 30px;
+    }
+    .ablb {
+        width: 150px;
+    }
+    .table-head p {
+        line-height: 10px;
+    }
+    .table-c p {
+        font-size: 6px;
+    }
+    .table-head p {
+        font-size: 6px;
+    }
+    #pgame-h {
+        left: -9px;
+    }
+    .player-game-p {
+        right: 28px;
+    }
+    .table-wager p {
+        right: -4px;
+    }
+    #multi-h {
+        left: 16px;
+    }
+    #table-multi {
+        left: 19px;
+    }
+    #payout-h {
+        right: -28px;
+    }
+    #table-payout {
+        right: -49px;
+    }
+    .about-us p {
+        font-size: 8px;
+        line-height: 15px;
+    }
+    .hc a {
+        font-size: 8px;
+        text-align: center;
+    }
+    .hc p {
+        font-size: 8px;
+    }
+    .search-nav{
+        display: none;
+    }
+    .about-us p {
+        width: 100%;
+    }
+    .socialmedia a {
+        width: 5%;
+    }
+    .socialmedia a {
+        background: 0;
     }
 }

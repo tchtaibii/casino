@@ -54,3 +54,11 @@ function showbar(){
     else
         m.style.display = "flex";
 }
+function ft_menu()
+{
+    var x = document.getElementById("left-s");
+    if (x.style.display == "none")
+        x.style.display = "flex";
+    else
+        x.style.display = "none";
+}
