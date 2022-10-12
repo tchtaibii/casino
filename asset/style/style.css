@@ -947,7 +947,7 @@ header{
     align-items: center;
     justify-content: flex-start;
     position: absolute;
-    top: 137px;
+    top: 111px;
     /* left: 50%; */
     /* transform: translate(-50%, -50%); */
     z-index: 3;
@@ -1131,9 +1131,9 @@ header{
     top: -13px;
 }
 
-.email-l{background: url('../img/mail-l.svg') no-repeat scroll 20px 18px; }
-.password-l{background: url('../img/password.svg') no-repeat scroll 20px 18px;}
-#name-re{background: url('../img/full_name.svg') no-repeat scroll 20px 18px;}
+.email-l{background: url('../img/mail-l.svg') no-repeat scroll 20px 18px; background-color: #1C1E27;}
+.password-l{background: url('../img/password.svg') no-repeat scroll 20px 18px; background-color: #1C1E27;}
+#name-re{background: url('../img/full_name.svg') no-repeat scroll 20px 18px; background-color: #1C1E27;}
 @media (min-width: 1920px) {
     #imgs2{
         width: 790px;
@@ -1491,7 +1491,9 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%
+    width: 100%;
+    position: relative;
+    top: -133px;
 }
 #navmobile ul{
     list-style-type: none;
@@ -1570,7 +1572,7 @@ header{
     }
     .menuu{
         display: block;
-
+        z-index: -11;
     }
     .left-menu-1, .left-menu-2 {
         margin-top: -79px;
