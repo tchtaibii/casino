@@ -1679,3 +1679,37 @@ header{
         background: 0;
     }
 }
+
+@media (max-width: 469px) {
+    #login-panel, #registre-panel {width: 359px;}
+    .form {width: 100%;}
+    .email-l , #name-re {width: 80%;}
+    .password {width: 84%;}
+    .xx {left: 157px;}
+}
+@media (max-width: 368px) {
+    #login-panel, #registre-panel {width: 266px;}
+    .form {width: 100%;}
+    .email-l , #name-re {width: 80%; }
+    .password {width: 84%;}
+    .xx {left: 111px;}
+    .password-l{
+        padding-right: 0px;
+    }
+    .password img {
+        display: none;
+    }
+    .password {
+        width: 80%;
+        left: -1px;
+    }
+    .areatext {
+        font-size: 10px;
+        padding-left: 50px;
+        padding-top: 9px;
+        padding-right: 10px;
+        margin-bottom: 30px;
+        padding-bottom: 0px;
+    }
+
+}
