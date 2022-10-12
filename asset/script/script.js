@@ -1,23 +1,20 @@
 function registre_login(id) {
+
     if (id == 'x')
     {
         var y = document.getElementById('panel');
-        var z = document.getElementsByTagName('body');
         var x = document.getElementById(id);
-        var x2 = document.getElementById(id);
-        z[0].style.overflow = "visible";
+        var x1 = document.getElementById('login-panel');
+        var x2 = document.getElementById('registre-panel');
         y.style.display = "none";
         x.style.display = "none";
         x1.style.display = "none";
-        var f = document.getElementById(id);
-        f.style.display = "hide";
+        x2.style.display = "none";
     }
-    var y = document.getElementById('panel');
-    var z = document.getElementsByTagName('body');
-    z[0].style.overflow = "hidden";
-    y.style.display = "flex";
     if (id == 'login-panel')
     {
+        var y = document.getElementById('panel');
+        y.style.display = "flex";
         var x = document.getElementById(id);
         x.style.display = "flex";
         var f = document.getElementById('xr');
@@ -28,6 +25,9 @@ function registre_login(id) {
     }
     else if (id == 'registre-panel')
     {
+        console.log("Please select");
+        var y = document.getElementById('panel');
+        y.style.display = "flex";
         // enable registre
         var x = document.getElementById(id);
         x.style.display = "flex";
